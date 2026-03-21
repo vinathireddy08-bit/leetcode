@@ -1,10 +1,10 @@
 class Solution(object):
     def removeElement(self, nums, val):
-        count = 0
+        k = 0   
 
-        for num in nums:
-            if num != val:
-                nums[count] = num
-                count += 1
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[k] = nums[i]
+                k += 1
 
-        return count
+        return k
